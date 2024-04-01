@@ -8,11 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      screens: {
+        sm: "480px",
       },
+      spacing: {
+        big: "48rem",
+      },
+    },
+    fontFamily: {
+      sans: ["Nunito", "ui-sans-serif", "system-ui"],
     },
   },
   plugins: [],

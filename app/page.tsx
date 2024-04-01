@@ -1,35 +1,22 @@
 import Image from "next/image";
+import Navbar from "./Navbar";
 
 export default function Home() {
   return (
-    <nav className="flex justify-between item-center bg-black text-white py-2 px-4">
-      <div>
-        <a className="" href="/">
-          <img src="https://technext.github.io/safs/assets/images/logo.png" alt="logo"  className="max-h-10"/>
-        </a>
-      </div>
-      <div className="float-right">
-        <ul className="flex item-center gap-4 text-white">
-          <li>
-            <a className="hover:text-[#ffc900] transition-colors">Home</a>
-          </li>
-          <li>
-            <a className="hover:text-[#ffc900]  transition-colors">About</a>
-          </li>
-          <li>
-            <a className="hover:text-[#ffc900]  transition-colors">Service</a>
-          </li>
-          <li>
-            <a className="hover:text-[#ffc900]  transition-colors">Project</a>
-          </li>
-          <li>
-            <a className="hover:text-[#ffc900]  transition-colors">Blog</a>
-          </li>
-          <li>
-            <a className="hover:text-[#ffc900]  transition-colors">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    //intro section
+    <div className="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 relative overflow-hidden">
+      {/* navigation bar */}
+      <Navbar />
+      {/* full image */}
+      <img
+        className="absolute bottom-0 right-0 h-5/6 "
+        src={"/assets/man.png"}
+        alt="my-image"
+      />
+      {/* circle*/}
+      <div className="hidden lg:block -bottom-1/4 absolute w-big h-big bg-indigo-900 right-0 left-0 mx-auto rounded-full -z-10 "></div>
+      {/* //intro content */}
+      <div></div>
+    </div>
   );
 }
