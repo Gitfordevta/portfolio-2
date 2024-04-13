@@ -9,8 +9,13 @@
 body {
   /* color: rgb(var(--foreground-rgb)); */
 }
-.container{
+
+.container {
   width: 80%;
+}
+
+.custom-h-1-2 {
+  height: 50vh;
 }
 
 @layer utilities {
